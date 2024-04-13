@@ -35,45 +35,6 @@ PROJEKT(ID, Név, Határidő, Leírás, Projektvezető)
 KIK_DOLGOZNAK_RAJTA(ID, ki dolgozik rajta)
 DOLGOZIK(Céges azonosító, ID, beszámoló)
 
-# Táblatervek 
- 
-Dolgozó
-Céges azonosító	VARCHAR(10)	A dolgozó azonosítója, kulcs
-Név	VARCHAR(100)	A dolgozó neve
-Jelszó	VARCHAR(100)	Titkosított jelszava
-Telefon	VARCHAR(20)	Telefonszáma
-Email	VARCHAR(50)	Emailcíme
-Fizetés	INT	Fizetése
-Beosztás	VARCHAR(100)	Beosztása
-Részlegvezető-e	INT	igaz, ha részleget vezet
-Osztályvezető-e	INT	igaz, ha osztályvezető
-Admin-e	INT	igaz, ha admin
-részleg.Név	VARCHAR(100)	A részleg neve, ahol dolgozik, külső kulcs részleg tábla kulcsára
-
-Részleg
-részleg.Név	VARCHAR(100)	A részlegnek a neve, kulcs, mivel nincs kettő ugyan olyan részleg
-Feladat	VARCHAR(200)	A részleg feladata
-osztaly.Név	VARCHAR(100)	Annak az osztálynak a neve, amelyikhez a részleg tartozik. Külső kulcs az osztály táblához.
-
-Osztály
-osztály.Név	VARCHAR(100)	Az osztály neve, kulcs
-Feladat	VARCHAR(200)	Az osztály feladata
-
-Projekt
-ID	INT	A projekt egyedi azonosítója, kulcs
-Név	VARCHAR(100)	A projekt neve
-Határidő	DATE	A projekt határideje
-Leírás	VARCHAR(200)	A projekt leírása
-Projektvezető	VARCHAR(100)	A projektvezető neve
-
-Dolgozik
-Céges azonosító	VARCHAR(10)	A dolgozó céges azonosítója, összetett kulcsnak egy attribútuma külső kulcs a dolgozó táblához
-ID	INT	A projekt azonosítója, összetett kulcs egy attribútuma, külső kulcs a porjekt táblához.
-Beszámoló	VARCHAR(800)	Az ID-hez tartozó projekthez írt beszámolója
-
-Kik_dolgoznak_rajta
-ID	INT	A projekt azonosítója, összetett kulcs egyik attribútuma, külső kulcs a projekt táblához, külső kulcs a projekthez
-ki dolgozik rajta	VARCHAR(10)	A dolgozó céges azonosítója, aki munkálkodott a projekten, összetett kulcs attribútum
 
 # Összetett lekérdezések 
  
