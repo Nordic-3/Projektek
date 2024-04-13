@@ -1,0 +1,60 @@
+body{
+    background-image: linear-gradient(#bee3fd, #05204b);
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.doboz{
+    background-color:  #c1e8ff;
+    width: 50%;
+    border-radius: 30px;
+    box-shadow: 0 3px #c1e8ff, 0 2px 25px black;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 1%;
+}
+
+input{
+    width: 55%;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
+fieldset{   
+    width: 60%;
+    border-radius: 30px;
+    border-color: black;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+a:link{
+    color: #5483b3;
+}
+a:visited{
+    color: #052659;
+}
+a:hover{
+    transform: translateY(-5px);
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.2s;
+}

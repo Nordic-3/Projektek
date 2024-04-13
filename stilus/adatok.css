@@ -1,0 +1,20 @@
+table {
+    width: 93%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+  }
+th, td{
+    border-radius: 30px;
+    border: 1px solid black;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+  }
+th{
+   color: #05204b;
+  }
+
+  div p:first-child{
+    font-weight: bold;
+    font-size: larger;
+  }

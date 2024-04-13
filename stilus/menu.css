@@ -1,0 +1,40 @@
+nav {
+    background-color: #05204b;
+    overflow: hidden;
+    position: fixed;
+    width: 99%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav a {
+    text-transform: uppercase;
+    display: block;
+    padding: 5%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+}
+
+nav a[aria-current="page"] {
+    background-color: white;
+    color: #05204b;
+
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
